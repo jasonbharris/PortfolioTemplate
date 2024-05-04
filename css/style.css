@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     width: 100vw;
     height: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
+    position: sticky;
 }
 
 header .navigation_section {
@@ -21,12 +26,15 @@ header .navigation_section .main_nav {
     width: 150px;
     position: absolute;
     top: 0;
-    margin-left: -135px;
+    margin-left: -125px;
     background-color: white;
+    z-index: 999;
+    padding: 20px;
 }
 
 header .navigation_section .main_nav ul {
     list-style-type: none;
+    margin-top: -20px;
 }
 
 header .navigation_section .main_nav ul li:first-child {
@@ -46,4 +54,110 @@ header .navigation_section .main_nav ul li a:not(first-of-type) {
 header .navigation_section .main_nav ul a:not(first-of-type):hover {
     background-color: blue;
     color: white;
+}
+
+.hero{
+    width: 100vw;
+}
+
+.hero .hero_image {
+    width: 100%;
+}
+
+.hero img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .messageandaction {
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+}
+
+.hero .messageandaction h2 {
+    margin-bottom: 15px;
+}
+
+.portfolio {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.portfolio .work {
+    width: 100%;
+}
+
+.portfolio .work img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .work .work_desc,
+.portfolio .work .work_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .work .work_desc p {
+    width: 40%;
+    text-align: center;
+} 
+
+.portfolio .work .work_links {
+    gap: 10px;
+}
+
+.contact {
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding: 32px;
+}
+
+.contact .contact_message {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .contact_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact_form label,
+.contact .contact_form input,
+.contact .contact_form button {
+    display: block;
+}
+
+.contact .contact_form label,
+.contact .contact_form button {
+    margin: 10px 0;
+}
+
+.contact .contact_form input,
+.contact .contact_form button,
+.contact .contact_form textarea {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid black;
+    margin: 15px;
+    padding: 32px;
+    text-align: center;
 }
