@@ -30,6 +30,7 @@ header .navigation_section .main_nav {
     background-color: white;
     z-index: 999;
     padding: 20px;
+    display: none;
 }
 
 header .navigation_section .main_nav ul {
@@ -160,4 +161,34 @@ footer {
     margin: 15px;
     padding: 32px;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navigation_section .fa-bars {
+        display: none;
+    }
+    header .navigation_section .main_nav {
+        width: 500px;
+        position: relative;
+        top: 0;
+        margin: -5px 0 0 -270px;
+        background-color: transparent;
+        z-index: 999;
+        padding: 20px;
+        display: block;
+    }
+    header .navigation_section .main_nav ul li:first-child {
+        display: none;
+    }
+    header .navigation_section .main_nav ul {
+        display: flex;
+        gap: 10px;
+    }
+    .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
