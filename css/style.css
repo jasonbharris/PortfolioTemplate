@@ -41,7 +41,10 @@ header .navigation_section .main_nav {
     background-color: white;
     z-index: 999;
     padding: 20px;
-    display: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    display: hidden;
 }
 
 header .navigation_section .main_nav ul {
@@ -165,6 +168,8 @@ header .navigation_section .main_nav ul a:not(first-of-type):hover {
     padding: 10px 20px;
     border-radius: 4px;
 }
+
+
 
 footer {
     width: 100%;
